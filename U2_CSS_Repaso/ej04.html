@@ -6,14 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/ej4.css">
 </head>
 
 <body>
     <div class="container">
         <form>
-            label<input type="text">
+            <fieldset>
+                <legend> <img src="img/persona.png"> Datos Personales</legend>
+                <p>
+                    <label for="Nombre">Nombre</label> <br>
+                    <input type="text">
+                </p>
+                <p>
+                    <label for="Apelllidos">Apelllidos</label><br>
+                    <input type="text">
+                </p>
+                <p>
+                    <label for="DNI">DNI</label><br>
+                    <input type="text">
+                </p>
+                <p>
+                    <label for="Fecha de nacimiento">Fecha de nacimiento</label><br>
+                    <input type="date">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend><img src="img/bandera.png">Idiomas</legend>
+                <input type="checkbox" name="Español" id="Español" value="Español">
+                <label for="Castellano">Castellano</label> <br>
+                <input type="checkbox" name="Frances" id="Frances" value="Frances">
+                <label for="Castellano">Frances</label> <br>
+                <input type="checkbox" name="Ingles" id="Inglés" value="Inglés">
+                <label for="Inglés">Inglés</label> <br>
+            </fieldset>
+            <fieldset>
+                <legend>Sugerencias</legend>
+                <input type="text" name="sugerencia" id="sugerencia">
+            </fieldset>
+            <input type="submit" value="Enviar" id="finalizar">
         </form>
     </div>
 </body>
 
 </html>
+

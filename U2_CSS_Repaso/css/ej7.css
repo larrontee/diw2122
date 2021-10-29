@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+header{
+    text-align: center;
+    background-color: rgb(235, 235, 117);
+}
+
+li{
+    list-style-image:url("../img/doc.png")    
+}
+
+.carpeta{
+    list-style-image: url("../img/carpeta.png");
+}
+.c1{
+    background-color: rgb(182, 182, 182);
+}
+
+.c2{
+    background-color: rgb(207, 207, 207);
+}
+
+aside{
+    float: left;
+    border: rgb(150, 150, 150) solid;
+    width: 20%;
+}
+
+#home{
+    background-color: grey;
+}
+
+.seleccion{
+    text-align: center;
+    float: left;
+    background-color: rgb(121, 187, 167);
+    width: 80%;
+    height: 342px;
+}
+
+footer{
+    background-color: rgb(176, 202, 143);
+    clear: both;
+}
+
+img{
+    width: 50px;
+    margin: 10px;
+}

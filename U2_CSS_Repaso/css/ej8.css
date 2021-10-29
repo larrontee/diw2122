@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+.container{
+    text-align: center;
+}
+ul{
+    background-color: rgb(255, 208, 80);
+    width: 20%;
+    border-radius: 20%;
+    border: solid black;
+    box-shadow:  10px 10px  blue ;
+    color: red;
+}
+li:hover{
+    cursor:zoom-in;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ul :first-child{
+    text-decoration:overline red;
+    color:blue;
+    font-size: 20px;
+}
+li:last-child::first-letter{
+    color: green;
+    text-decoration: underline;
+}

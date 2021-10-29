@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    text-align: center;
+}
+
+header{
+background-color: rgb(253, 253, 131);
+height: 100px;
+}
+
+#leftcolumn{
+    display: inline-block;
+    float: left;
+    width: 20%;
+    
+}
+
+#leftcolumn aside{
+    margin: 10px;
+    margin-left: 0%;
+    height: 100px;
+}
+
+#navigation{
+    background-color: rgb(181, 219, 181);
+    
+}
+
+#linklist{
+    background-color: rgb(213, 181, 219);
+}
+
+article{
+    background-color:rgb(93, 174, 240);
+    float: right;
+    width: 78%;
+    margin-top: 10px;
+    margin-right: 0%;
+    height: 210px;
+}
+
+footer{
+    height: 100px;
+    background-color:pink;
+    clear: both;
+}

@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+img{
+    width: 1rem;
+}
+.container{
+    justify-content: center;
+    margin: auto;
+}
+form{
+    width: 50%;
+    margin:10px auto;
+    padding: 10px;
+    border: 1px solid;
+}
+
+fieldset{
+    border: 1px dashed;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+label::first-letter {
+    text-transform: uppercase;
+}
+
+
+input:hover{
+    background-color: rgb(253, 233, 144);
+}
+input:focus{
+    background-color: rgb(248, 184, 87);
+    color: blue;
+}
+
+#sugerencia{
+    height: 50px; 
+    width: 100%;
+}
+
+#finalizar{
+    background-color: #daaa0d	;
+    color: white ;
+    margin-left: 10px;   
+}
+#finalizar:hover{
+    background-color: #b4943a;
+}

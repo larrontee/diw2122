@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body{
+    text-align: center;
+}
+
+
+li{
+    display: inline-block;
+    border: solid 1px;
+    border-bottom: none;
+    background-color: rgb(243, 172, 139);
+    color: rgb(116, 3, 3);
+    font-weight: bold;
+}
+
+li:hover{
+    background-color: white;
+    color: rgb(146, 146, 146);
+    border: solid 1px black;
+    border-bottom: none;
+}
