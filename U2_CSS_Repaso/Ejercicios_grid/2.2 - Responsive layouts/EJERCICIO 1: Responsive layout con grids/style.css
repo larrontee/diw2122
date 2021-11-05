@@ -1,0 +1,28 @@
+.container{
+    display: grid;  
+    grid-template: 20% 75%;
+    
+
+}
+
+
+footer, header{
+    background-color:greenyellow;
+    padding: 50px;
+}
+.rojo{
+    background-color:red;
+    padding: 50px;
+}
+.rosa{
+    background-color:pink;
+    padding: 50px;
+}
+.naranja{
+    background-color:orange;
+    padding: 50px;
+}
+.azul{
+    padding: 50px;
+    background-color:blue;
+}
