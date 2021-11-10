@@ -1,0 +1,28 @@
+.horario{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dia{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+.dia,.rojo,.azul,.amarillo,.hora,.vacio{
+    margin: 5px;
+    padding: 100px;
+    
+}
+.rojo{
+    
+    background-color: red;
+}
+.azul{
+    background-color: blue;
+}
+.amarillo{
+    background-color: orange;
+}
+
+.hora,.vacio{
+    background-color: gray;
+}
