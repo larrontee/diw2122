@@ -1,8 +1,6 @@
 .container{
     display: grid;  
     grid-template: 20% 75%;
-    
-
 }
 
 
