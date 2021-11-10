@@ -1,0 +1,43 @@
+
+.horario{
+    display: inline-flex;
+    border: solid 1px rgb(235, 83, 255);
+    padding:5px 20px 5px 20px;
+    justify-content: space-around;
+}
+#c1{
+    flex-basis: 6%;
+}
+
+.column{
+    flex-direction: column;
+    flex-basis: 15%;
+}
+p{
+    padding:0px;
+    margin:0px;
+}
+
+
+
+.dia{
+background-color: rgb(53, 53, 53);
+color: white;
+}
+.rojo{
+    background-color: red;
+}
+.azul{
+    background-color: rgb(0, 102, 255);
+}
+.amarillo{
+    background-color: orange;
+}
+
+.hora,.vacio{
+    background-color: gray;
+}
+.vacio{
+    padding:10px;
+    width: 10rem;
+}
