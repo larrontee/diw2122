@@ -15,10 +15,21 @@ p{
     grid-template-rows: repeat(3,auto);
 }
 .alien{
+    padding: 15px;
     background-repeat: no-repeat;
     background-image: url("../EJERCICIO_3:Tablero_de_juego/img/Captura\ de\ pantalla\ de\ 2021-11-12\ 19-40-55.png");
 }
 
 .espacio{
-    grid-row: 4/span 2;
+    padding: 20px;
+    grid-column: 1/span 12; 
+}
+.nave{
+    padding-left: 7.5px;  
+    padding-right: 7.5px;
+    padding-top: 15px;
+    padding-bottom:25px;
+    background-repeat: no-repeat;
+    background-image: url("../EJERCICIO_3:Tablero_de_juego/img/Captura\ de\ pantalla\ de\ 2021-11-12\ 21-04-22.png");
+    grid-column: 6/span 1;
 }
