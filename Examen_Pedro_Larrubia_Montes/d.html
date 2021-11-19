@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:nth-child(2)::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+
+        p:nth-child(1):before {
+            content: "X";
+            color: green;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>La primera letra no se ve en rojo</p>
+
+    <p>Pero la primera de éste sí.</p>
+</body>
+
+</html>

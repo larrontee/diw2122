@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span::after {
+            content: '✓';
+            padding-left: 5px;
+        }
+
+        p span::after {
+            content: '€';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <p>Menu</p>
+            <p>Pollo con patatas <span>7</span></p>
+        </div>
+        <div>
+            <div>Bebidas</div>
+            <span>1 Cocacola</span>
+        </div>
+    </div>
+</body>
+
+</html>
