@@ -1,16 +1,6 @@
-/* .main{
-    display:grid;
-    grid-template-columns:auto auto auto auto;
-    grid-template-rows:auto auto auto;
+div{
+    margin: 5px;
 }
-#alto1{
-    grid-row: 1/span 2  ;
-}
-#alto2{
-    grid-row: 2/span 2  ;
-} */
-
-
 
 header, footer {
     padding:10px;
@@ -19,29 +9,71 @@ header, footer {
 
 
 .container{
-    background-color:green;
+    background-color:rgb(208, 253, 255);
+    height: 800px;
 }
+
 .main{
     display: grid;
     grid-template-columns:auto ;
+    height: 90%;
 }
 
-/* .altura2{
-    background-color: black;
+.main div{
+    
 }
-.cuadrado{
-    background-color: blue;
-}
-.anchura2{
-    background-color: white; 
-} */
-div{
-    padding:10px;
-}
+
 img{
     width:100%;
 }
-@media(min-width:768px){
+
+.altura2, .anchura2, .cuadrado{
+    background-size: cover;
+}
+
+#alto1{
+    background-image: url("img/niebla1.jpg");
+}
+#alto2{
+    background-image: url("img/playa2.jpg");
+}
+#cuadrado1{
+    background-image: url("img/playa3.jpg");
+}
+#cuadrado2{
+    background-image: url("img/playa4.jpg");
+}
+#cuadrado3{
+    background-image: url("img/playa5.jpg");
+}
+#cuadrado4{
+    background-image: url("img/playa6.jpg");
+}
+#ancho1{
+    background-image: url("img/playa7.jpg");
+}
+#ancho2{
+    background-image: url("img/niebla2.jpg");
+}
+
+
+
+
+@keyframes desvanecer {
+    0% { opacity: 1; }
+    33% {  opacity: 0.67; }
+    66% {  opacity: 0.34; }
+    100% {  opacity: 0; }
+}
+
+@keyframes aparecer {
+    0% {opacity: 0; }
+    33% {opacity:0.34;}
+    66% {opacity:0.67; }
+    100% {opacity: 1; }
+}  
+
+@media(min-width:468px){
     .main{
         grid-template-columns:auto auto auto auto;
         grid-template-rows:auto auto auto;

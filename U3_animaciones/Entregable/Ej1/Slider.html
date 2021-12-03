@@ -7,21 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Slider.css">
+
+    <script>
+        var desvanecer = [
+            { opacity: 1 },
+            { opacity: 0.67 },
+            { opacity: 0.34 },
+            { opacity: 0 },
+        ];
+        var params = {
+            duration: time,
+            iterations: Infinity,
+            direction: 'alternate' /* La animación, al terminar un ciclo, invierte su dirección. */
+        }
+    </script>
+
+
 </head>
 
 <body>
     <div class="container">
         <header></header>
         <div class="main">
-            <div class="altura2" id="alto1"><img src="img/playa1.jpg" alt=""></div>
-            <div class="cuadrado"><img src="img/playa2.jpg" alt=""></div>
-            <div class="anchura2" id=ancho1><img src="img/playa3.jpg" alt=""></div>
-            <div class="altura2" id="alto2"><img src="img/playa4.jpg" alt=""></div>
-            <div class="cuadrado"><img src="img/playa5.jpg" alt=""></div>
-            <div class="cuadrado"><img src="img/playa6.jpg" alt=""></div>
-            <div class="cuadrado"><img src="img/playa7.jpg" alt=""></div>
-            <div class="anchura2" id=ancho2><img src="img/playa8.jpg" alt=""></div>
-
+            <div class="altura2" id="alto1"></div>
+            <div class="cuadrado" id="cuadrado1"></div>
+            <div class="anchura2" id=ancho1></div>
+            <div class="altura2" id="alto2"></div>
+            <div class="cuadrado" id="cuadrado2"></div>
+            <div class="cuadrado" id="cuadrado3"></div>
+            <div class="cuadrado" id="cuadrado4"></div>
+            <div class="anchura2" id=ancho2></div>
         </div>
         <footer></footer>
     </div>
