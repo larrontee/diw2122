@@ -1,18 +1,22 @@
 .marco{
     display: grid;
-    grid-template-columns:repeat(4,auto);
+    grid-template-columns:auto;
     grid-template-rows: repeat(3,auto);
     background-color:black;
     padding: 100px;
 }
 p{
+    font-family: 'Press Start 2P', cursive;
     color:white;
+}
+p:hover{
+    color: greenyellow;
 }
 
 .campo{
     display: grid;
     grid-template-columns:repeat(12,auto);
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat(5,auto);
 }
 .alien{
     padding: 15px;
@@ -27,9 +31,32 @@ p{
 .nave{
     padding-left: 7.5px;  
     padding-right: 7.5px;
-    padding-top: 15px;
-    padding-bottom:25px;
+    padding-top: 20px;
+    padding-bottom:20px;
     background-repeat: no-repeat;
     background-image: url("../EJERCICIO_3:Tablero_de_juego/img/Captura\ de\ pantalla\ de\ 2021-11-12\ 21-04-22.png");
     grid-column: 6/span 1;
+}
+
+.vidas{
+    margin: 15px;
+    border-top:solid greenyellow;
+}
+#boton{
+    text-align: center;
+}
+
+#boton:active{
+    transform: rotate(-15deg) scale(6);
+
+}
+
+@media (max-width: 600px) {
+    .campo{
+        grid-template-columns:repeat(5,auto);
+        grid-template-rows: repeat(4,auto);
+    }
+    .movil{
+        display: none;
+    }
 }
