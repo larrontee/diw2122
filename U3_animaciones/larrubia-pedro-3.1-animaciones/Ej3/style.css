@@ -1,0 +1,144 @@
+.container{
+    /* background-color: black; */
+    background-image: url("img/thumb-1920-237222.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+.main{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+.carga {
+    width: 80%;
+    height: 25px;
+    margin: 0 auto;
+    background-color: rgba(126, 126, 126, 0.281);
+    border: 4px solid rgba(201, 201, 201, 0.5);
+    border-radius: 10px;
+}
+
+.barra {
+    animation: animacion 5s infinite ease-in-out;
+    border-radius: 8px;
+    background: rgb(208,207,223);
+    text-align: end;
+}
+
+@keyframes animacion {
+    0% {
+        width: 0%;
+        height: 100%;
+        background: rgb(208,207,223);
+    }
+    25% {
+        width: 25%;
+        height: 100%;
+        background: rgb(173, 171, 211);
+    }
+    50% {
+        width: 50%;
+        height: 100%;
+        background: rgb(121, 114, 252);
+    }
+    75% {
+        width: 75%;
+        height: 100%;
+        background: rgb(105, 98, 241);
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background: rgb(79, 70, 255);
+    }
+}
+.porcentaje{
+    color:white;
+}
+.porcentaje::before{
+    animation: porcentaje 5s infinite;
+    content: "";
+}
+
+@keyframes porcentaje {
+    0% {
+        content: "0%";
+        color:black;
+    }
+    25% {
+        content: "25%";
+    }
+    50% {
+        content: "50%";
+    }
+    75% {
+        content: "75%";
+    }
+    100% {
+        content: "100%";
+    }
+}
+
+
+.letrero{
+
+    border: 5px solid red;
+    background-color: rgba(68, 24, 94, 0.74);
+    animation: colores .5s infinite alternate-reverse;
+}
+
+
+@keyframes colores {
+    0% {
+        color: blue;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: yellow;
+    }
+}
+
+.play{
+    background-color: red;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 20%;
+    margin: auto;
+}
+
+.play:hover{
+    background-color: rgb(109, 19, 19);
+}
+.play:active{
+    background-color: red;
+}
+.sonic {
+    width: 64px;
+    height: 72px;
+    background-image: url(img/sonic.png);
+    margin: auto;
+    animation: walk .3s steps(4) infinite;
+  }
+  
+  @keyframes walk {
+  
+    0% {
+      background-position: 0
+    }
+  
+    100% {
+      background-position: -256px
+    }
+  }
+
+@media (min-width: 700px) {
+    .main{
+        grid-template-columns: auto auto;
+    }
+}
+  

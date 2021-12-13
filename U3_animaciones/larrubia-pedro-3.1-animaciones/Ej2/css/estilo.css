@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+.container{
+  margin: auto;
+  justify-content: center-;
+}
+.fondo {
+  width: 550px;
+  height: 550px;
+  background-image: url(../img/mapa.png);
+  animation: fondomov 2s linear infinite;
+}
+
+
+
+@keyframes fondomov {
+  0% {
+    background-position: 550px;
+
+  }
+
+  100% {
+    background-position: 0
+  }
+}
+
+.sonic {
+  width: 64px;
+  height: 72px;
+  background-image: url(../img/sonic.png);
+  margin: auto;
+  animation: walk .3s steps(4) infinite;
+  position: relative;
+  top: 350px;
+}
+
+@keyframes walk {
+
+  0% {
+    background-position: 0
+  }
+
+  100% {
+    background-position: -256px
+  }
+}
+
+
+img {
+  height: 100px;
+  position: absolute;
+}
+
+#titulo {
+  margin-left: 175px;
+  width: 200px;
+}
+
+.cielo {
+  width: 550px;
+  height: 550px;
+  animation: color 4s alternate infinite;
+}
+
+@keyframes color {
+  0% {
+    background-color: rgb(146, 237, 240);
+  }
+
+  100% {
+    background-color: rgb(9, 32, 53);
+  }
+}
+
+.sol{
+  animation: rotacion_sol 8s infinite;
+} 
+.luna{
+  animation: rotacion_luna 8s infinite;
+  animation-delay: 4s;
+}
+@keyframes rotacion_sol{
+  
+  0% {transform: translate(-100px,0);opacity: 0;}
+  50% {transform: translate(550px,0); opacity: 0;}
+  75% {transform: translate(450px,0);}
+  100% {transform: translate(-100px,0);}
+}
+@keyframes rotacion_luna{
+  0% {transform: translate(-100px,0);opacity: 0;}
+  50% {transform: translate(550px,0); opacity: 0;}
+  75% {transform: translate(450px,0);}
+  100% {transform: translate(-100px,0);}
+}
+
+
