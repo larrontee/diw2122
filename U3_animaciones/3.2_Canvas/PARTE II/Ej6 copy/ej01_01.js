@@ -8,7 +8,7 @@ const ctx = canvas.getContext("2d");
 
 let x = 0;
 let y = 10;
-let velx = 3;
+let velx = 0.8;
 let vely = 1;
 let contador = 0;
 let n = 2;
@@ -36,30 +36,18 @@ function update() {
     }
 
     if (contador == n) {
-        if (vely >= 0.2) {
-            vely = vely * -1;
-            vely += -0.2;
-            vely = vely * -1;
+        if (vely >= 0.4) {
+            vely = vely - 0.2;
         } else if (vely <= -0.2) {
-            vely += -0.2;
-        } else if (vely < 0.2 && vely > -0.2) {
-            vely = 0;
+            vely = vely + 0.2;
         }
-        if (velx >= 0.2) {
-            velx = velx * -1;
-            velx += -0.2;
-            velx = velx * -1;
+        if (velx >= 0.4) {
+            velx = velx - 0.2;
         } else if (velx <= -0.2) {
-            velx += -0.2;
-        } else if (velx < 0.2 && velx > -0.2) {
-            velx = 0;
+            velx = velx + 0.2;
         }
-
-
-
         contador = 0;
         console.log("contador" + contador);
-
     }
 
     x = x + velx;
