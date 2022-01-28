@@ -1,41 +1,45 @@
 @import "_base.scss";
 
 .container {
-    display: grid;
-}
-header{
+  display: grid;
+  header {
     color: white;
     background-color: $azul;
-}
-aside{
+  }
+  aside {
     display: grid;
-    grid-template-columns:repeat(6, auto);
+    grid-template-columns: repeat(6, auto);
     background-color: $claro;
-    .boton{
-        background-color: orange;
-        padding: 1.5rem;
-        margin: 5px;    
+    .boton {
+      background-color: orange;
+      margin: 5px;
     }
-}
+  }
 
-main{
-    grid-template-rows:repeat(9, auto);
-}
-
-footer{
+  main {
+    display: grid;
+    row-gap: 10px;
+    .card {
+    }
+  }
+  footer {
     background-color: $claro;
     color: $amarillo;
+  }
 }
 
 @media (min-width: 600px) {
-
-    .medio{
-        grid-template-columns:repeat(4, auto);
+  .medio {
+    display: grid;
+    grid-template-columns: 10% auto;
+    aside {
+      grid-template-rows: repeat(6, auto);
+      grid-template-columns: auto;
     }
-    aside{
-        grid-column: 1/span 1;
+    main {
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(4, auto);
+      column-gap: 5%;
     }
-    main{
-        grid-column: 2/span 3;
-    }
+  }
 }

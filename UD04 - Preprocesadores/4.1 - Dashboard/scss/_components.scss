@@ -1,5 +1,13 @@
-.card{
-    :hover{
-        @include sombreado();
+@import "_base.scss";
+@media (min-width: 600px) {
+  .card {
+    :hover {
+      @include sombreado();
     }
+  }
+}
+.boton {
+  :hover {
+    @include sombreado();
+  }
 }

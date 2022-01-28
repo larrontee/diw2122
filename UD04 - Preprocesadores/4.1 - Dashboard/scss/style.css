@@ -2,9 +2,30 @@
   width: 50px;
 }
 
-.card :hover {
-  -webkit-transition: .5s;
-  transition: .5s;
+img {
+  width: 300px;
+}
+
+#logo {
+  width: 50px;
+}
+
+img {
+  width: 300px;
+}
+
+@media (min-width: 600px) {
+  .card :hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 4px 30px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 13px -7px #000000, 0px 4px 30px 6px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.boton :hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 4px 30px 6px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 10px 13px -7px #000000, 0px 4px 30px 6px rgba(0, 0, 0, 0.5);
 }
@@ -13,54 +34,64 @@
   width: 50px;
 }
 
+img {
+  width: 300px;
+}
+
 .container {
   display: -ms-grid;
   display: grid;
 }
 
-header {
+.container header {
   color: white;
-  background-color: #014EB0;
+  background-color: #014eb0;
 }
 
-aside {
+.container aside {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[6];
       grid-template-columns: repeat(6, auto);
-  background-color: #0274F4;
+  background-color: #0274f4;
 }
 
-aside .boton {
+.container aside .boton {
   background-color: orange;
-  padding: 1.5rem;
   margin: 5px;
 }
 
-main {
-  -ms-grid-rows: (auto)[9];
-      grid-template-rows: repeat(9, auto);
+.container main {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 10px;
 }
 
-footer {
-  background-color: #0274F4;
+.container footer {
+  background-color: #0274f4;
   color: #f0f402;
 }
 
 @media (min-width: 600px) {
   .medio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10% auto;
+        grid-template-columns: 10% auto;
+  }
+  .medio aside {
+    -ms-grid-rows: (auto)[6];
+        grid-template-rows: repeat(6, auto);
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .medio main {
     -ms-grid-columns: (auto)[4];
         grid-template-columns: repeat(4, auto);
-  }
-  aside {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/span 1;
-  }
-  main {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-    grid-column: 2/span 3;
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+    -webkit-column-gap: 5%;
+            column-gap: 5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
