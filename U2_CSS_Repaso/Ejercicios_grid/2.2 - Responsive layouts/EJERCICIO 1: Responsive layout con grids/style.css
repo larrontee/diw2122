@@ -1,7 +1,7 @@
 .container{
     width: 50%;
     display: grid;  
-    grid-template-columns: 20% auto;
+    grid-template-columns: auto;
     margin: auto;
     grid-column-gap: 1.25rem;
     border:none;

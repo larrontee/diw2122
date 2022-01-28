@@ -1,0 +1,41 @@
+@import "_base.scss";
+
+.container {
+    display: grid;
+}
+header{
+    color: white;
+    background-color: $azul;
+}
+aside{
+    display: grid;
+    grid-template-columns:repeat(6, auto);
+    background-color: $claro;
+    .boton{
+        background-color: orange;
+        padding: 1.5rem;
+        margin: 5px;    
+    }
+}
+
+main{
+    grid-template-rows:repeat(9, auto);
+}
+
+footer{
+    background-color: $claro;
+    color: $amarillo;
+}
+
+@media (min-width: 600px) {
+
+    .medio{
+        grid-template-columns:repeat(4, auto);
+    }
+    aside{
+        grid-column: 1/span 1;
+    }
+    main{
+        grid-column: 2/span 3;
+    }
+}
