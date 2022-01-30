@@ -13,39 +13,218 @@
 <body>
   <div class="container">
     <header>
-      <img src="img/logo.png" alt="" id="logo" />
-      omponentes
-    </header>
+      <p>
+
+        E
+        <img src="img/pngegg.png" alt="" id="logo" />
+        actly components
+      </p>
+      </header>
     <div class="medio">
       <aside>
-        <div class="boton" id="selected"></div>
-        <div class="boton"> </div>
-        <div class="boton"></div>
-        <div class="boton"></div>
-        <div class="boton"></div>
-        <div class="boton"></div>
+        <div class="boton">
+          <img src="img/alinear-justificar.png" alt="">
+        </div>
+        <div class="boton">
+          <img src="img/user.png" alt="">
+        </div>
+        <div class="boton">
+          <img src="img/gear.png" alt="">
+        </div>
+     
+        <div class="boton">
+          <img src="img/analitico.png" alt="">
+        </div>
+     
+     
       </aside>
       <main>
-        <div class="card" id="chart1">
-          <img
-            src="https://quickchart.io/chart?width=10&height=10&chart={type:'line',data:{labels:['January','February', 'March','April', 'May'], datasets:[{label:'Dogs',data:[50,60,70,180,190]},{label:'Cats',data:[100,200,300,400,500]}]}}" />
+        
+        <div class="card" id="grafica-1">
+          <img src="https://quickchart.io/chart?c={
+            type: 'line',
+            data: {
+              labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+              datasets: [
+              {
+                label: '2020',
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                data: [430, 290, 170, 800, 730, 600, 700],
+                fill: false,
+              },
+              {
+                label: '2021',
+                fill: false,
+                backgroundColor: 'rgb(54, 162, 235)',
+                borderColor: 'rgb(54, 162, 235)',
+                data: [600,485, 459, 603, 270, 360, 220],
+              },
+              ],
+            },
+            options: {
+              title: {
+                display: true,
+                text: 'Ventas',
+              },
+            },
+          }
+          
+          " alt="">
         </div>
-        <div class="card" id="chart2">
-          <img
-            src="https://quickchart.io/chart?width=250&height=150&chart={type:'line',data:{labels:['January','February', 'March','April', 'May'], datasets:[{label:'Dogs',data:[50,60,70,180,190]},{label:'Cats',data:[100,200,300,400,500]}]}}" />
+        <div class="score"> 300 <br/> valoraciones <br/>de 5 estrellas  </div>
+        <div class="card" id="grafica-2">
+          <img src="https://quickchart.io/chart?c={
+            type: 'doughnut',
+            data: {
+              datasets: [
+              {
+                data: [940, 250, 720, 700, 140],
+                backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)',
+                ],
+                label: 'Dataset 1',
+              },
+              ],
+              labels: ['18-25', '26-35', '36-50', '51-60', 'Mayor 60'],
+            },
+            options: {
+              title: {
+                display: true,
+                text: 'Edad - Cliente',
+              },
+            },
+          }
+          " alt="">
+        </div> 
+      <div class="score">4.000 <br> usuarios registrados </div>
+      
+      <div class="card" id="grafica-3">
+        Capacidad almacen
+        <img src="https://quickchart.io/chart?c={
+          type: 'progressBar',
+          data: {
+            datasets: [{
+              data: [75]
+            }]
+          }
+        }
+        " alt="">
+      </div>
+      <div class="card"id="grafica-4">
+        <img src="https://quickchart.io/chart?c={
+          type: 'line',
+          data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [
+            {
+              label: 'existencias',
+              data: [60, -73, 46, -40, 60, 25, 30],
+              backgroundColor: 'rgba(54, 162, 235, 0.5)',
+              borderColor: 'rgb(54, 162, 235)',
+              borderWidth: 1,
+            },
+            ],
+          },
+          options: {
+            legend: {
+              position: 'right',
+            },
+            title: {
+              display: true,
+              text: 'Relacion entre existencias/pedidos',
+            },
+          },
+        }
+        
+        " alt="">
+        
+      </div><div class="card"id="grafica-5">
+        <img src="https://quickchart.io/chart?c={
+          type: 'radar',
+          data: {
+            labels: [
+            ['Eating', 'Dinner'],
+            ['Drinking', 'Water'],
+            'Sleeping',
+            ['Designing', 'Graphics'],
+            'Coding',
+            'Cycling',
+            'Running',
+            ],
+            datasets: [
+            {
+              label: '2020',
+              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+              borderColor: 'rgb(255, 99, 132)',
+              pointBackgroundColor: 'rgb(255, 99, 132)',
+              data: [26, 9, 42, 23, 42, 26, 10],
+            },
+            {
+              label: '2021',
+              backgroundColor: 'rgba(54, 162, 235, 0.2)',
+              borderColor: 'rgb(54, 162, 235)',
+              pointBackgroundColor: 'rgb(54, 162, 235)',
+              data: [6, 98, 27, 58, 52, 39, 35],
+            },
+            ],
+          },
+          options: {
+            title: {
+              display: true,
+              text: 'Tipos de articulos vendidos',
+            },
+          },
+        }
+        
+        
+        " alt="">
+      </div>
+      <div class="score"> <p>250 <br> visitas a la web hoy </p>   </div>
+        <div class="card"id="grafica-6">
+          <img src="https://quickchart.io/chart?c={
+            type: 'bar',
+            data: {
+              labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+              datasets: [
+                {
+                  label: '2020',
+                  backgroundColor: 'rgb(255, 99, 132)',
+                  borderColor: 'rgb(255, 99, 132)',
+                  data: [430, 290, 170, 800, 730, 600, 700],
+                  fill: false,
+                },
+                {
+                  label: '2021',
+                  fill: false,
+                  backgroundColor: 'rgb(54, 162, 235)',
+                  borderColor: 'rgb(54, 162, 235)',
+                  data: [600,485, 459, 603, 270, 360, 220],
+                },
+              ],
+            },
+            options: {
+              title: {
+                display: true,
+                text: 'Nuevos usuarios en la web',
+              },
+            },
+          }
+          "
+          alt="">
+          
+          
         </div>
-        <div class="card" id="chart2">
-          <img
-            src="https://quickchart.io/chart?width=250&height=150&chart={type:'line',data:{labels:['January','February', 'March','April', 'May'], datasets:[{label:'Dogs',data:[50,60,70,180,190]},{label:'Cats',data:[100,200,300,400,500]}]}}" />
-        </div>
-        <div class="card" id="chart2">
-          <img
-            src="https://quickchart.io/chart?width=250&height=150&chart={type:'line',data:{labels:['January','February', 'March','April', 'May'], datasets:[{label:'Dogs',data:[50,60,70,180,190]},{label:'Cats',data:[100,200,300,400,500]}]}}" />
-        </div>
-      </main>
-    </div>
-    <footer>Pedro Larrubia Montes</footer>
+
+      </div>
+    </main>
   </div>
+  <footer>Pedro Larrubia Montes</footer>
+</div>
 </body>
 
 </html>
