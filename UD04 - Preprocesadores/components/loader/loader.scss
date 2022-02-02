@@ -1,0 +1,52 @@
+$duration: 10s !global;
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+@mixin reset-load {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+}
+
+@mixin size($width: 100%, $height: 50px) {
+}
+
+* {
+  @include reset;
+}
+
+.loader{
+  display: block;
+  position: relative;
+  background: #fff;
+  border:2px solid #fff;
+  @include size($height: 50px);
+
+  &::before {
+    background-color: red;
+    animation: load $duration linear infinite;
+    @include reset-load;
+    @include size(0, $height: 100%);
+  }
+
+  &::after {
+    font-size: 30pt;
+    color: yellow;
+    animation: text_load $duration linear infinite;
+    @include reset-load;
+    @include size(100%, 100%);
+  }
+}
+
+@keyframes load {
+  0% {  }
+  100% {  }
+}
+
+@keyframes text_load {
+}
