@@ -1,13 +1,26 @@
 @import "_base.scss";
-@media (min-width: 600px) {
-  .card {
-    :hover {
-      @include sombreado();
-    }
-  }
-}
-.boton {
+
+.card {
   :hover {
     @include sombreado();
   }
+}
+
+.boton{
+  :hover{
+    @include selecionado;
+  }
+}
+
+
+.score, .card{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
+  color:$claro;
+  text-align: center;
+  vertical-align: middle;
+  background-color: ghostwhite;
+  border-radius: 10%;
+  margin: 0%;
 }

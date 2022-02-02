@@ -1,14 +1,14 @@
 $azul: #014eb0;
 $claro: #0274f4;
 $amarillo: #f0f402;
-$naranja: #ff5900;
+$naranja: #f87800;
 $tamanoMovil: 599px;
 
 #logo {
-  width: 50px;
+  width: 75px;
 }
 img {
-  width: 300px;
+  width: 100%;
 }
 @mixin sombreado($sombra: 0.5) {
   transition: 0.5s;
@@ -17,7 +17,13 @@ img {
   box-shadow: 0px 10px 13px -7px #000000,
     0px 4px 30px 6px rgba(0, 0, 0, $sombra);
 }
-
-@function anchura($num, $total) {
-  @return porcent($num/$total) * 100;
+@mixin selecionado($sombra: 0.5) {
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 10px 13px -7px #ffffff,
+    0px 4px 30px 6px rgba(255,255,255, $sombra);
+  box-shadow: 0px 10px 13px -7px #ffffff,
+    0px 4px 30px 6px rgba(255,255,255, $sombra);
+    border-radius: 10px;
 }
+
+

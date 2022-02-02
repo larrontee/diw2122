@@ -1,41 +1,52 @@
 #logo {
-  width: 50px;
+  width: 75px;
 }
 
 img {
-  width: 300px;
+  width: 100%;
 }
 
 #logo {
-  width: 50px;
+  width: 75px;
 }
 
 img {
-  width: 300px;
+  width: 100%;
 }
 
-@media (min-width: 600px) {
-  .card :hover {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 4px 30px 6px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 10px 13px -7px #000000, 0px 4px 30px 6px rgba(0, 0, 0, 0.5);
-  }
-}
-
-.boton :hover {
+.card :hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 4px 30px 6px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 10px 13px -7px #000000, 0px 4px 30px 6px rgba(0, 0, 0, 0.5);
 }
 
+.boton :hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 10px 13px -7px #ffffff, 0px 4px 30px 6px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 10px 13px -7px #ffffff, 0px 4px 30px 6px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.score, .card {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
+  color: #0274f4;
+  text-align: center;
+  vertical-align: middle;
+  background-color: ghostwhite;
+  border-radius: 10%;
+  margin: 0%;
+}
+
 #logo {
-  width: 50px;
+  width: 75px;
 }
 
 img {
-  width: 300px;
+  width: 100%;
 }
 
 .container {
@@ -44,27 +55,39 @@ img {
 }
 
 .container header {
-  color: white;
   background-color: #014eb0;
+  padding-left: 2%;
+  text-align: start;
 }
 
-.container aside {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[6];
-      grid-template-columns: repeat(6, auto);
+.container header p {
+  margin: 5px;
+  color: #f0f402;
+  font-size: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .medio aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #0274f4;
 }
 
-.container aside .boton {
-  background-color: orange;
-  margin: 5px;
-}
-
-.container main {
+.container .medio main {
   display: -ms-grid;
   display: grid;
   row-gap: 10px;
+}
+
+.container .medio main .grafica {
+  width: 100%;
 }
 
 .container footer {
@@ -72,26 +95,41 @@ img {
   color: #f0f402;
 }
 
-@media (min-width: 600px) {
-  .medio {
+@media (min-width: 700px) {
+  .container .medio {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 10% auto;
         grid-template-columns: 10% auto;
   }
-  .medio aside {
-    -ms-grid-rows: (auto)[6];
-        grid-template-rows: repeat(6, auto);
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+  .container .medio aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
-  .medio main {
-    -ms-grid-columns: (auto)[4];
-        grid-template-columns: repeat(4, auto);
-    -ms-grid-rows: (auto)[4];
-        grid-template-rows: repeat(4, auto);
-    -webkit-column-gap: 5%;
-            column-gap: 5%;
+  .container .medio main {
+    -ms-grid-columns: (auto)[6];
+        grid-template-columns: repeat(6, auto);
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+    -webkit-column-gap: 2%;
+            column-gap: 2%;
+  }
+  .container .medio main #grafica-1 {
+    grid-column: 1/ 2 span;
+  }
+  .container .medio main #grafica-2 {
+    grid-column: 4/ 3 span;
+  }
+  .container .medio main #grafica-3 {
+    grid-column: 2/ 1 span;
+  }
+  .container .medio main #grafica-4 {
+    grid-column: 3/ 3 span;
+  }
+  .container .medio main #grafica-5 {
+    grid-column: 1/ 2 span;
   }
 }
 /*# sourceMappingURL=style.css.map */
