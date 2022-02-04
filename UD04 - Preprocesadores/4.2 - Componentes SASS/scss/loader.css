@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.loader {
+  display: block;
+  position: relative;
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.loader::before {
+  background-color: red;
+  -webkit-animation: load 10s linear infinite;
+          animation: load 10s linear infinite;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+}
+
+.loader::after {
+  font-size: 30pt;
+  color: yellow;
+  -webkit-animation: text_load 10s linear infinite;
+          animation: text_load 10s linear infinite;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+}
+
+@-webkit-keyframes load {
+  0% {
+  }
+  100% {
+  }
+}
+
+@keyframes load {
+  0% {
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes text_load {}
+
+@keyframes text_load {}
+/*# sourceMappingURL=loader.css.map */
