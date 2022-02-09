@@ -55,9 +55,9 @@ $duration: 10s !global;
 }
 
 @keyframes text_load {
-  @for $percent from 0 through 100 {
-    #{$percent} {
-      content: $percent;
+  @for $percent from 0 through 10 {
+    #{$percent*10}% {
+      content: $percent * 10%;
     }
   }
 }
