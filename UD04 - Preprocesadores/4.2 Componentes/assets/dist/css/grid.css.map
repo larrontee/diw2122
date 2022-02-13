@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "grid.css",
+	"sources": [
+		"../../src/scss/grid.scss"
+	],
+	"sourcesContent": [
+		"////\r\n/// @author Pedro Larrubia Montes\r\n/// @since 1.0\r\n////\r\n$grid-width: 100rem;\r\n$vertical: 4rem;\r\n$horizontal: 4rem;\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  font-size: 10pt;\r\n}\r\n\r\n.row {\r\n  max-width: $grid-width;\r\n  margin: 0 auto;\r\n  &:not(:last-child) {\r\n    margin-bottom: $vertical;\r\n  }\r\n\r\n  &::after {\r\n    content: \"\";\r\n    display: table;\r\n    clear: both;\r\n  }\r\n\r\n  [class^=\"col-\"] {\r\n    float: left;\r\n    background-color: orange;\r\n    padding: 1rem;\r\n    &:not(:last-child) {\r\n      margin-right: $horizontal;\r\n    }\r\n  }\r\n\r\n  @for $i from 2 through 4 {\r\n    @if $i==2 {\r\n      .col-1-of-#{$i} {\r\n        width: calc((100% - #{$horizontal}) / 2);\r\n      }\r\n    } @else {\r\n      .col-1-of-#{$i} {\r\n        width: calc((100% - (#{$i}-1) * #{$horizontal}) / #{$i});\r\n      }\r\n    }\r\n  }\r\n\r\n  @for $i from 3 through 4 {\r\n    .col-2-of-#{$i} {\r\n      width: calc(\r\n        2 * ((100% - (#{$i}-1) * #{$horizontal}) / #{$i}) + #{$horizontal}\r\n      );\r\n    }\r\n  }\r\n\r\n  .col-3-of-4 {\r\n    width: calc(3 * ((100% - 3 * #{$horizontal}) / 4) + 2 * #{$horizontal});\r\n  }\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "AAQA,AAAA,CAAC,AAAC,CACA,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,UAAU,CAAE,UAAU,CACtB,SAAS,CAAE,IAAI,CAChB,AAED,AAAA,IAAI,AAAC,CACH,SAAS,CAZE,MAAM,CAajB,MAAM,CAAE,MAAM,CA2Cf,AA7CD,AAGE,IAHE,AAGD,IAAK,CAAA,WAAW,CAAE,CACjB,aAAa,CAdN,IAAI,CAeZ,AALH,AAOE,IAPE,AAOD,OAAO,AAAC,CACP,OAAO,CAAE,EAAE,CACX,OAAO,CAAE,KAAK,CACd,KAAK,CAAE,IAAI,CACZ,AAXH,AAaE,IAbE,EAaF,AAAA,KAAC,EAAO,MAAM,AAAb,CAAe,CACd,KAAK,CAAE,IAAI,CACX,gBAAgB,CAAE,MAAM,CACxB,OAAO,CAAE,IAAI,CAId,AApBH,AAiBI,IAjBA,EAaF,AAAA,KAAC,EAAO,MAAM,AAAb,CAIE,IAAK,CAAA,WAAW,CAAE,CACjB,YAAY,CA3BL,IAAI,CA4BZ,AAnBL,AAwBM,IAxBF,CAwBE,WAAW,AAAK,CACd,KAAK,CAAE,uBAAiC,CACzC,AA1BP,AA4BM,IA5BF,CA4BE,WAAW,AAAK,CACd,KAAK,CAAE,+BAAmD,CAC3D,AA9BP,AA4BM,IA5BF,CA4BE,WAAW,AAAK,CACd,KAAK,CAAE,+BAAmD,CAC3D,AA9BP,AAmCI,IAnCA,CAmCA,WAAW,AAAK,CACd,KAAK,CAAE,8CAEN,CACF,AAvCL,AAmCI,IAnCA,CAmCA,WAAW,AAAK,CACd,KAAK,CAAE,8CAEN,CACF,AAvCL,AA0CE,IA1CE,CA0CF,WAAW,AAAC,CACV,KAAK,CAAE,4CAAgE,CACxE"
+}
