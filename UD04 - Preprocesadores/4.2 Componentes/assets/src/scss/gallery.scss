@@ -1,0 +1,53 @@
+////
+/// @author Pedro Larrubia Montes
+/// @since 1.0
+////
+
+$MAX_COLUMNS: 4 !default;
+$RESPONSIVE_COLUMNS: (
+  1024px: 3,
+  768px: 2,
+  480px: 1,
+);
+
+///
+/// Devuelve el ancho que tiene que tener las columnas según el número de column
+/// @param int $n numero de columnas
+///
+@function grid_columns($n) {
+  @if ($n > 0) {
+    @return ((100 / $n)) * 1%;
+  } @else {
+    @return 0;
+  }
+}
+
+///
+/// Establece el tamaño el tamaño de las img segun el numero de columnas que haya ya que llama a la función grid_column.
+/// @param int $n numero de columnas
+///
+@mixin resize($n) {
+  .gallery img {
+    width: grid_columns($n);
+  }
+}
+
+body {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+@include resize($MAX_COLUMNS);
+
+@each $size, $value in $RESPONSIVE_COLUMNS {
+  @media (max-width: $size) {
+    @include resize($value);
+  }
+}
