@@ -1,3 +1,0 @@
-*{margin:0;padding:0;text-align:center}.loader{display:block;position:relative;background:#fff;border:2px solid #fff;width:100%;height:50px}.loader::before{background-color:red;animation:load 10s linear infinite;position:absolute;content:"";left:0;top:0;width:0;height:100%}.loader::after{font-size:30pt;color:yellow;animation:text_load 10s linear infinite;position:absolute;content:"";left:0;top:0;width:100%;height:100%}@keyframes load{0%{width:0%}100%{width:100%}}@keyframes text_load{0%{content:"00%"}10%{content:"10%"}20%{content:"20%"}30%{content:"30%"}40%{content:"40%"}50%{content:"50%"}60%{content:"60%"}70%{content:"70%"}80%{content:"80%"}90%{content:"90%"}100%{content:"100%"}}
-
-/*# sourceMappingURL=loader.css.map */

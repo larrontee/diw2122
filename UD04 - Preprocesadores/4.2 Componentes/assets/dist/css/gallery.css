@@ -1,3 +1,0 @@
-body{margin:0 auto;max-width:100%}.gallery{display:flex;flex-direction:row;flex-wrap:wrap;align-content:stretch}.gallery img{width:25%}@media (max-width: 1024px){.gallery img{width:33.333333%}}@media (max-width: 768px){.gallery img{width:50%}}@media (max-width: 480px){.gallery img{width:100%}}
-
-/*# sourceMappingURL=gallery.css.map */
