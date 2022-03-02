@@ -1,0 +1,213 @@
+<!--
+ ___________________________________________________________
+/\                                                          \  
+\_|                                                         |
+  |         _____     _           _     _ _                 |
+  |        |     |___| |_ ___ ___|_|___| |_|___ ___         |
+  |        | | | | .'|  _| -_|  _| | .'| | |- _| -_|        |
+  |        |_|_|_|__,|_| |___|_| |_|__,|_|_|___|___|        |
+  |                                                         |
+  |  _______________________________________________________|_ 
+  \_/_________________________________________________________/
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Pestañas</title>
+	<meta charset="utf-8">
+	<meta name="description" content="https://materializecss.com/tabs.html" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="../materialize.min.css" media="screen,projection" />
+
+	<style>
+		.difuminado {
+			background: rgb(255, 141, 0);
+			background: linear-gradient(90deg, rgba(255, 141, 0, 1) 0%, rgba(255, 255, 255, 1) 100%);
+		}
+	</style>
+	<script>
+		function showToast(message) {
+			M.toast({ html: message }, 1000);
+		}
+	</script>
+</head>
+
+<body>
+	<div class="row">
+		<!-- PESTAÑAS -->
+		<ul class="tabs orange ">
+			<li class="tab col s4 ">
+				<a class="white-text" href="#tab-1" onclick="showToast('Revisemos las citas de hoy');">
+					<i class="tiny material-icons">calendar_today</i>
+					RECORD
+				</a>
+			</li>
+			<li class="tab col s4">
+				<a class="white-text" href="#tab-2" onclick="showToast('Mis contactos');">
+					<i class="tiny material-icons">access_alarm</i>
+					NOTICIAS
+				</a>
+			</li>
+			<li class="tab col s4">
+				<a class="white-text" href="#tab-3" onclick="showToast('Mis contactos');">
+					<i class="tiny material-icons">settings</i>
+					APPS
+				</a>
+			</li>
+		</ul>
+		<!-- CONTENIDO PESTAÑA 1 -->
+		<div id="tab-1" class="col s12">
+			<table class="striped">
+				<thead class="center">
+					<tr class="center">
+						<th>Name</th>
+						<th>Item Name</th>
+						<th>Item Price</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Alvin</td>
+						<td>Eclair</td>
+						<td>$0.87</td>
+					</tr>
+					<tr>
+						<td>Alan</td>
+						<td>Jellybean</td>
+						<td>$3.76</td>
+					</tr>
+					<tr>
+						<td>Jonathan</td>
+						<td>Lollipop</td>
+						<td>$7.00</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+		<!-- CONTENIDO PESTAÑA 3 -->
+		<div id="tab-3" class="col s12 ">
+			<!-- CARD -->
+			<div class="col s6 m4">
+				<div class="card-panel center grey-text">
+					<div class="card-title">
+						<img class=" responsive-img" src="img/arcade.png" alt="contact">
+					</div>
+					<h5>Contacto</h5>
+					<p>Datos de contacto</p>
+				</div>
+			</div>
+
+			<!-- CARD -->
+			<div class="col s6 m4">
+				<div class="card-panel center grey-text">
+					<div class="card-title">
+						<img class=" responsive-img" src="img/cards.png" alt="contact">
+					</div>
+					<h5>Contacto</h5>
+					<p>Datos de contacto</p>
+				</div>
+			</div>
+			<!-- CARD -->
+			<div class="col s6 m4">
+				<div class="card-panel center grey-text">
+					<div class="card-title">
+						<img class=" responsive-img" src="img/dados.png" alt="contact">
+					</div>
+					<h5>Contacto</h5>
+					<p>Datos de contacto</p>
+				</div>
+			</div>
+			<!-- CARD -->
+			<div class="col s6 m4">
+				<div class="card-panel center grey-text">
+					<div class="card-title">
+						<img class=" responsive-img" src="img/flight.png" alt="contact">
+					</div>
+					<h5>Contacto</h5>
+					<p>Datos de contacto</p>
+				</div>
+			</div>
+			<!-- CARD -->
+			<div class="col s6 m4">
+				<div class="card-panel center grey-text">
+					<div class="card-title">
+						<img class=" responsive-img" src="img/tetris.png" alt="contact">
+					</div>
+					<h5>Contacto</h5>
+					<p>Datos de contacto</p>
+				</div>
+			</div>
+			<!-- CARD -->
+			<div class="col s6 m4">
+				<div class="card-panel center grey-text">
+					<div class="card-title">
+						<img class=" responsive-img" src="img/puzzle.png" alt="contact">
+					</div>
+					<h5>Contacto</h5>
+					<p>Datos de contacto</p>
+				</div>
+			</div>
+		</div>
+		<!-- CONTENIDO PESTAÑA 2 -->
+		<div id="tab-2" class="col s12 ">
+			<div class="row">
+				<div class="col s12">
+					<ul class="collapsible">
+						<li>
+							<div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Local
+							</div>
+							<div class="collapsible-body difuminado"> <i
+									class="material-icons">info</i><span>Item</span></div>
+						</li>
+						<li>
+							<div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Sucesos
+							</div>
+							<div class="collapsible-body difuminado"> <i
+									class="material-icons">info</i><span>Item</span></div>
+						</li>
+						<li>
+							<div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Politica
+							</div>
+							<div class="collapsible-body difuminado"> <i
+									class="material-icons">info</i><span>Item</span></div>
+						</li>
+						<li>
+							<div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Privacidad
+							</div>
+							<div class="collapsible-body difuminado"> <i
+									class="material-icons">info</i><span>Item</span></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<!-- INTERACCIÓN ELEMENTOS -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.tabs').tabs();
+		});
+		// despegable vertical 
+		document.addEventListener('DOMContentLoaded', function () {
+			var elems = document.querySelectorAll('.collapsible');
+			var instances = M.Collapsible.init(elems, options);
+		});
+		// Or with jQuery
+		$(document).ready(function () {
+			$('.collapsible').collapsible();
+		});
+	</script>
+</body>
+
+</html>
